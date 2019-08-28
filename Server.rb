@@ -14,10 +14,8 @@ class Server < Sinatra::Base
     post '/galleries' do
         title = params["title"]
         keywords = [params["keyword_1"], params["keyword_2"]].join("+")
-        puts title
-        puts keywords
-        # gallery = Gallery.create(title: title, keywords: keywords)
-        # gallery.collect_photos
+        gallery = Gallery.new(title: title, keywords: keywords)
+        gallery.collect_photos
         erb :index, locals: {galleries: Gallery.all}
     end
 end
