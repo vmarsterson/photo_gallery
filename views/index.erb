@@ -1,3 +1,4 @@
+<a href="/galleries/new">Create New</a>
 <%galleries.each do |gallery|%>
     <h1><%=gallery.title%></h1>
     <section>
@@ -7,7 +8,6 @@
                 <figcaption><%=photo.likes%></figcaption>
                 <img src="<%=photo.photographer.avatar%>" />
                 <figcaption><%=photo.photographer.name%></figcaption>
-                
             </article>
         <%end%>
     </section>
