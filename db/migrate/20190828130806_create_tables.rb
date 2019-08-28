@@ -8,6 +8,8 @@ class CreateTables < ActiveRecord::Migration[5.2]
     create_table :photos do |col|
       col.string :url
       col.integer :likes
+      col.integer :gallery_id
+      col.integer :photographer_id
     end
 
     create_table :photographers do |col|

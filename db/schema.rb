@@ -25,6 +25,8 @@ ActiveRecord::Schema.define(version: 2019_08_28_130806) do
   create_table "photos", force: :cascade do |t|
     t.string "url"
     t.integer "likes"
+    t.integer "gallery_id"
+    t.integer "photographer_id"
   end
 
 end
