@@ -1,0 +1,13 @@
+<h1><%=gallery.title%></h1>
+<section>
+    <%galley.photos.each do |photo|%>
+        <article>
+            <img src="<%=photo.url%>" />
+            <figcaption><%=photo.likes%></figcaption>
+            <img src="<%=photo.photographer.avatar%>" />
+            <figcaption><%=photo.photographer.name%></figcaption>
+            
+        </article
+    <%end%>
+
+</section>
